@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sensor-fusion robotic arm — Benson Lin</title><meta name="description" content="Disney Imagineering senior capstone: a robotic arm with a multi-sensor package for a robotic character application. Fall 2026 to present.">
+<meta name="theme-color" content="#09080d"><meta name="color-scheme" content="dark">
+<meta property="og:title" content="Sensor-fusion robotic arm — Benson Lin"><meta property="og:description" content="Disney Imagineering senior capstone: a robotic arm with a multi-sensor package for a robotic character application. Fall 2026 to present."><meta property="og:type" content="website"><meta property="og:image" content="assets/og.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="prev" href="sidepod-cooling.html"><link rel="next" href="thumb-rest.html">
+<script>try{if(sessionStorage.getItem('bl-music')==='1')document.documentElement.classList.add('music')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Silkscreen:wght@400&display=swap"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Silkscreen:wght@400&display=swap"></noscript>
+<script>
+/* V6.12: Keep text hidden until its real font faces load; eliminate font swapping on visible pages. */
+(function(){
+  var root=document.documentElement;
+  root.classList.add('fonts-pending');
+  if(!document.fonts || !document.fonts.load){root.classList.remove('fonts-pending');return;}
+  var cleared=false;
+  function show(){if(cleared)return;cleared=true;root.classList.remove('fonts-pending');}
+  var faces=['400 17px "Barlow"','500 17px "Barlow"','600 17px "Barlow"',
+             '500 21px "Barlow Condensed"','600 21px "Barlow Condensed"','700 21px "Barlow Condensed"',
+             '400 12px "IBM Plex Mono"','500 12px "IBM Plex Mono"',
+             '400 12px "Silkscreen"'];
+  Promise.all(faces.map(function(face){return document.fonts.load(face);})).then(show,show);
+  setTimeout(show,5500); /* fail safe for blocked/offline Google Fonts */
+})();
+</script>
+<link rel="stylesheet" href="site.css?v=final3">
+<script src="site.js?v=6.29" defer></script>
+</head>
+<body id="top" data-p="dc" data-page="project">
+<a class="skip" href="#main">Skip to content</a>
+<div class="carbon" aria-hidden="true"><div class="sheen"><i></i></div></div>
+<header class="bar"><a class="brand" href="index.html" title="Back to homepage" aria-label="Benson Lin — Home"><span class="brand-name">Benson Lin</span><span class="brand-home" aria-hidden="true">⌂ Home</span></a>
+<nav class="nav" aria-label="Primary">
+<details class="work-menu"><summary>Work</summary><div class="work-panel"><a href="gaucho-racing.html" style="--c:#a98bff"><i></i><span>Gaucho Racing aerodynamics</span><b>01</b></a><a href="hydration-bot.html" style="--c:#3cc8f0"><i></i><span>Hydration Bot</span><b>02</b></a><a href="sidepod-cooling.html" style="--c:#ff8a3d"><i></i><span>Sidepod cooling research</span><b>03</b></a><a href="disney-capstone.html" aria-current=page style="--c:#6b8cff"><i></i><span>Sensor-fusion robotic arm</span><b>04</b></a><a href="thumb-rest.html" style="--c:#b4c3dd"><i></i><span>Generative-design clarinet thumb rest</span><b>05</b></a><a href="capillary-spreading.html" style="--c:#6fe0b0"><i></i><span>Capillary spreading experiments</span><b>06</b></a><a href="bracket-fea.html" style="--c:#ff5a6e"><i></i><span>Front wing bracket — FEA study</span><b>07</b></a><a href="laziness-detector.html" style="--c:#ffcf3f"><i></i><span>Laziness Detector — ME 10</span><b>08</b></a><hr><a href="extras.html" style="--c:#c4a8ff"><i></i><span>Extras</span><b>—</b></a></div></details>
+<a href="index.html#about">About</a><a href="extras.html">Extras</a>
+<a class="res" href="Benson_Lin_Resume_Fall_2026.pdf" target="_blank" rel="noopener">Résumé ↗</a><a class="opt" href="#contact">Contact</a></nav></header>
+<main id="main"><header class="ph"><div class="ph-in"><a class="back" href="index.html#work">← All projects</a>
+<div class="ph-title project-flair-title"><svg class="project-flair flair-sense" viewBox="0 0 180 64" aria-hidden="true" focusable="false"><circle class="core" cx="90" cy="32" r="4"/><circle class="ring one" cx="90" cy="32" r="15"/><circle class="ring two" cx="90" cy="32" r="26"/><path d="M90 32 L121 12"/></svg><p class="kicker"><span class="no">04</span>Robotics · Human interaction</p><p class="status">In progress</p><h1>Sensor-fusion robotic arm</h1><p class="meta">Disney Imagineering senior capstone, Fall 2026 to present. Team of five, $6K budget</p></div>
+<figure class="ph-media frame small"><img src="assets/disney-home-placeholder.png" alt="Sketch of a robotic arm on a base beside a standing figure" width="1309" height="1045" fetchpriority="high" decoding="async"></figure></div></header><div class="body"><div class="grid" style="display:block"><section class="sec" id="overview"><div class="text"><p>A robotic arm (an OpenManipulator-X) with a multi-sensor package that detects its environment and human interactions through sensor fusion, for a robotic character application. The project is in progress. In the research phase I wrote the section on user interactions, which covers how people respond to robot touch and what that means for the arm’s compliance, its responses, and our testing scenarios.</p></div><aside class="margin"><h3>Platform &amp; tools</h3><p class="tools plat"><strong>Hardware:</strong> OpenManipulator-X, DYNAMIXEL actuators, OpenCR controller.</p><p class="tools plat"><strong>Design:</strong> Onshape CAD and prototype sensor mounts.</p><p class="tools plat"><strong>Planned software:</strong> ROS 2 for sensor integration and control; MoveIt for motion planning; Gazebo for simulation.</p><p class="tools plat"><strong>Sensing under evaluation:</strong> capacitive and resistive tactile arrays, force-sensing resistors, and joint-current feedback.</p><p class="spec-note">Software and sensor approaches are research-stage candidates, not completed integrations.</p></aside></section></div></div><nav class="pager" aria-label="Projects"><a class="prev" href="sidepod-cooling.html" style="--c:#ff8a3d;--c-rgb:255,138,61"><small>← Previous project</small><b>03 · Sidepod cooling research</b></a><a class="next" href="thumb-rest.html" style="--c:#b4c3dd;--c-rgb:180,195,221"><small>Next project →</small><b>05 · Generative-design clarinet thumb rest</b></a></nav></main><footer class="foot" id="contact"><div class="wrap"><div class="grid">
+<div class="text"><h2>Contact</h2></div>
+<div class="links colr"><a href="mailto:bensonlin.business@gmail.com"><span>bensonlin.business@gmail.com</span><small>Email</small></a>
+<a href="https://linkedin.com/in/bensonlin-ucsb" rel="noopener"><span>linkedin.com/in/bensonlin-ucsb</span><small>LinkedIn</small></a>
+<a href="Benson_Lin_Resume_Fall_2026.pdf" target="_blank" rel="noopener"><span>Resume (PDF)</span><small>1 page</small></a></div>
+<p class="fine">Benson Lin · Mechanical engineering · UC Santa Barbara</p></div></div></footer>
+<dialog id="lb" aria-label="Enlarged image"><div class="lb-bar"><span class="cnt"></span><button class="lb-prev" type="button" aria-label="Previous image">←</button><button class="lb-next" type="button" aria-label="Next image">→</button><button class="lb-x" type="button">Close</button></div><div class="lb-stage"><img alt=""></div><p class="cap"></p></dialog>
+<button id="mm-exit" type="button" hidden aria-label="Return to the normal engineering portfolio theme">♫ Return to engineering mode</button>
+</body></html>
