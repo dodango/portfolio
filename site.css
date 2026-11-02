@@ -219,7 +219,7 @@ p{margin:0 0 1.05em}
 .text p strong{color:var(--ink)}
 .tools{font:400 12.5px/1.65 var(--f-mono);letter-spacing:.02em;color:var(--mute)}
 .tools::before{content:"Tools";display:block;font-weight:500;text-transform:uppercase;letter-spacing:.1em;color:var(--acc);margin-bottom:6px;font-size:11px}
-.tools.plat::before{content:"Platform and plan"}
+.tools.plat::before{content:none}
 .tools.inline{margin-top:1.4em;max-width:46em}
 
 /* margin column: documents */
@@ -903,3 +903,7 @@ body[data-p="home"] .hero-copy .kicker{font-family:var(--f-mono)}
 .gr26-annotated .gr26-pins{fill:#efb8da;stroke:#1d1929;stroke-width:2}
 .gr26-annotated .gr26-labels rect{fill:#1b1825;fill-opacity:.94;stroke:#be84cd;stroke-width:1.4}
 .gr26-annotated .gr26-labels text{font-size:20px;font-family:var(--f-disp);font-weight:600;letter-spacing:.6px;fill:#f5eaf4}
+
+/* Disney Platform & tools: one heading only; compact list entries. */
+.margin .tools.plat{margin-top:9px;line-height:1.55}
+.margin h3 + .tools.plat{margin-top:14px}
